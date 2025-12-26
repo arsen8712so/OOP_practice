@@ -1,0 +1,14 @@
+
+*.exe
+*.obj
+*.pdb
+*.ilk
+*.suo
+*.user
+
+vc140.pdb
+ipch/
+*.tlog
+*.lastbuildstate
+
+.vscode/
