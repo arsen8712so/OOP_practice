@@ -2,16 +2,17 @@
 #include "Patient.h"
 
 int main() {
-    Doctor d1(1, "Petrov", "Petro", "Petrovych", "Kyiv", "099", "Therapist", 5);
-    Doctor d2(2, "Sidorov", "Ivan", "Sydorovych", "Lviv", "067", "OCL", 15);
-    
-    Patient p1(1, "Shevchenko", "Taras", "Hryhorovych", "Kaniv", "050", 101, "Cold");
-    Patient p2(2, "Franko", "Ivan", "Yakovych", "Lviv", "063", 102, "Healthy");
+    Person* staff[2];
 
-    d1.printInfo();
-    d2.printInfo();
-    p1.printInfo();
-    p2.printInfo();
+    staff[0] = new Doctor(101, "Ivanov", "Ivan", "Ivanovych", "Kyiv", "099", "Surgeon", 12);
+    staff[1] = new Patient(1, "Shevchenko", "Andriy", "Mykolayovych", "Lviv", "050", 123, "Flu");
+
+    for (int i = 0; i < 2; i++) {
+        staff[i]->printInfo(); 
+    }
+
+    delete staff[0];
+    delete staff[1];
 
     return 0;
 }

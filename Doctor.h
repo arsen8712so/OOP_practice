@@ -13,7 +13,7 @@ public:
     Doctor(); 
     Doctor(int id, std::string lName, std::string fName, std::string mName, 
            std::string addr, std::string ph, std::string spec, int exp);
-    void printInfo() const;
+    void printInfo() const override;
 };
 
 #endif

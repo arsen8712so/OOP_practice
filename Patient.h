@@ -15,7 +15,7 @@ public:
             std::string addr, std::string ph, int medCard, std::string diag);
     ~Patient();
 
-    void printInfo() const;
+    void printInfo() const override;
     bool operator==(const Patient& other) const;
 };
 

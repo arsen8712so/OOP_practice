@@ -9,7 +9,8 @@ Patient::Patient(int id, std::string lName, std::string fName, std::string mName
 Patient::~Patient() {}
 
 void Patient::printInfo() const {
-    std::cout << "Patient: " << lastName << " " << firstName << " - " << diagnosis << std::endl;
+    std::cout << "[PATIENT] ID: " << id << " | " << lastName << " " << firstName 
+              << " | Card: " << medicalCardNumber << " | Diag: " << diagnosis << std::endl;
 }
 
 bool Patient::operator==(const Patient& other) const {
