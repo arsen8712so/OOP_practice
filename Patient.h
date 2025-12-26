@@ -1,6 +1,7 @@
 #ifndef PATIENT_H
 #define PATIENT_H
 
+#include <iostream>
 #include <string>
 
 class Patient {
@@ -15,11 +16,15 @@ private:
     std::string diagnosis;
 
 public:
-    Patient(); 
-Patient(int id, std::string lName, std::string fName, std::string mName, 
-        std::string addr, std::string ph, int medCard, std::string diag); // Параметризований
-Patient(const Patient &other); 
-~Patient();
+    Patient();
+    Patient(int id, std::string lName, std::string fName, std::string mName, 
+            std::string addr, std::string ph, int medCard, std::string diag);
+    Patient(const Patient &other);
+    ~Patient();
+
+    friend std::istream& operator>>(std::istream& in, Patient& p);
+    friend std::ostream& operator<<(std::ostream& out, const Patient& p);
+    bool operator==(const Patient& other) const;
 };
 
 #endif

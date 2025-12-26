@@ -9,7 +9,7 @@
       "stopAtEntry": false,
       "externalConsole": true,
       "cwd": "c:/Users/vchor/OneDrive/Рабочий стол/C++Practice/Practis 1",
-      "program": "c:/Users/vchor/OneDrive/Рабочий стол/C++Practice/Practis 1/build/Debug/outDebug",
+      "program": "${workspaceFolder}/main.exe",
       "MIMode": "gdb",
       "miDebuggerPath": "gdb",
       "setupCommands": [
