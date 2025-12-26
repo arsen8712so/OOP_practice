@@ -1,17 +1,11 @@
 #ifndef PATIENT_H
 #define PATIENT_H
 
+#include "Person.h"
 #include <iostream>
-#include <string>
 
-class Patient {
+class Patient : public Person {
 private:
-    int id;
-    std::string lastName;
-    std::string firstName;
-    std::string middleName;
-    std::string address;
-    std::string phone;
     int medicalCardNumber;
     std::string diagnosis;
 
@@ -19,11 +13,9 @@ public:
     Patient();
     Patient(int id, std::string lName, std::string fName, std::string mName, 
             std::string addr, std::string ph, int medCard, std::string diag);
-    Patient(const Patient &other);
     ~Patient();
 
-    friend std::istream& operator>>(std::istream& in, Patient& p);
-    friend std::ostream& operator<<(std::ostream& out, const Patient& p);
+    void printInfo() const;
     bool operator==(const Patient& other) const;
 };
 
