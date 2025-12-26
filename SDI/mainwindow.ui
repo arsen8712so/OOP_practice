@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QWidget" name="">
+    <property name="geometry">
+     <rect>
+      <x>100</x>
+      <y>70</y>
+      <width>443</width>
+      <height>94</height>
+     </rect>
+    </property>
+    <layout class="QGridLayout" name="gridLayout">
+     <item row="0" column="0">
+      <widget class="QLabel" name="lastName">
+       <property name="text">
+        <string>Прізвище</string>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="1">
+      <widget class="QLabel" name="firstName">
+       <property name="text">
+        <string>Ім'я</string>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="2">
+      <widget class="QLabel" name="specialization">
+       <property name="text">
+        <string>Спеціалізація</string>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="3">
+      <widget class="QLabel" name="experience">
+       <property name="text">
+        <string>Стаж</string>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="0">
+      <widget class="QLineEdit" name="editLastName"/>
+     </item>
+     <item row="1" column="1">
+      <widget class="QLineEdit" name="editFirstName"/>
+     </item>
+     <item row="1" column="2">
+      <widget class="QLineEdit" name="editSpec"/>
+     </item>
+     <item row="1" column="3">
+      <widget class="QSpinBox" name="spinExp"/>
+     </item>
+     <item row="2" column="0">
+      <widget class="QPushButton" name="btnCreate">
+       <property name="text">
+        <string>Створити об'єкт</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>800</width>
+     <height>25</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menu">
+    <property name="title">
+     <string>Файл</string>
+    </property>
+    <addaction name="separator"/>
+    <addaction name="actionCreate"/>
+    <addaction name="actionShow"/>
+    <addaction name="actionExit"/>
+   </widget>
+   <addaction name="menu"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="actionCreate">
+   <property name="text">
+    <string>Створити об'єкт</string>
+   </property>
+  </action>
+  <action name="actionShow">
+   <property name="text">
+    <string>Відобразити створений об'єкт</string>
+   </property>
+  </action>
+  <action name="actionExit">
+   <property name="text">
+    <string>Вихід</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
